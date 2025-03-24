@@ -1,0 +1,187 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three-bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes, and National Trust woodland.",
+      "location": "Petts Wood Road, Orpington BR5",
+      "picture": "/assets/images/prop1.jpg",
+      "images": [
+        "/assets/images/prop1.jpg", 
+        "/assets/images/prop1.1.webp", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.4.jpg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.6.jpeg",
+        "/assets/images/prop1.7.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan1.png",
+      "url": "/property/1",
+      "added": {
+        "month": "October",
+        "day": 12,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Leasehold",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two-bathroom, garden flat with an open-plan modern kitchen and private courtyard garden.",
+      "location": "Crofton Road, Orpington BR6",
+      "picture": "/assets/images/prop2.jpg",
+      "images": [
+        "/assets/images/prop2.jpg", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.7.jpeg",
+        "/assets/images/prop1.8.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan2.webp",
+      "url": "/property/2",
+      "added": {
+        "month": "September",
+        "day": 14,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 950000,
+      "tenure": "Freehold",
+      "description": "A stunning four-bedroom detached house with a large garden, spacious kitchen, and modern amenities. Perfect for families.",
+      "location": "Downe Village BR6",
+      "picture": "/assets/images/prop3.jpeg",
+      "images": [
+       "/assets/images/prop3.jpeg", 
+        "/assets/images/prop1.1.webp", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.4.jpg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.6.jpeg",
+        "/assets/images/prop1.7.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan3.jpg",
+      "url": "/property/3",
+      "added": {
+        "month": "August",
+        "day": 20,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 300000,
+      "tenure": "Leasehold",
+      "description": "A cozy one-bedroom flat located in the heart of Bromley. Close to public transport and local amenities.",
+      "location": "Bromley High Street, Bromley BR1",
+      "picture": "/assets/images/prop4.jpeg",
+      "images": [
+        "/assets/images/prop4.jpeg", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.7.jpeg",
+        "/assets/images/prop1.8.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan2.webp",
+      "url": "/property/4",
+      "added": {
+        "month": "July",
+        "day": 25,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "description": "A luxurious five-bedroom mansion with extensive gardens, a private pool, and a state-of-the-art kitchen.",
+      "location": "Chislehurst Road, Chislehurst BR7",
+      "picture": "/assets/images/prop5.jpeg",
+      "images": [
+        "/assets/images/prop5.jpeg", 
+        "/assets/images/prop1.1.webp", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.4.jpg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.7.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan5.jpeg",
+      "url": "/property/5",
+      "added": {
+        "month": "June",
+        "day": 15,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 450000,
+      "tenure": "Leasehold",
+      "description": "Modern two-bedroom flat with an open-plan living area, en-suite master bedroom, and a balcony with city views.",
+      "location": "Central Avenue, London SE1",
+      "picture": "/assets/images/prop6.avif",
+      "images": [
+        "/assets/images/prop6.avif", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.7.jpeg",
+        "/assets/images/prop1.8.jpeg"
+       
+      ],
+      "floorPlan": "/assets/images/floorplan2.webp",
+      "url": "/property/6",
+      "added": {
+        "month": "May",
+        "day": 10,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 6,
+      "price": 2000000,
+      "tenure": "Freehold",
+      "description": "Exclusive six-bedroom countryside estate with panoramic views, a private tennis court, and a home cinema.",
+      "location": "Kent Downs, Kent ME17",
+      "picture": "/assets/images/prop7.jpeg",
+      "images": [
+        "/assets/images/prop1.jpg", 
+        "/assets/images/prop1.1.webp", 
+        "/assets/images/prop1.2.jpeg", 
+        "/assets/images/prop1.3.jpeg",
+        "/assets/images/prop1.4.jpg",
+        "/assets/images/prop1.5.jpeg",
+        "/assets/images/prop1.6.jpeg",
+        "/assets/images/prop1.7.jpeg"
+      ],
+      "floorPlan": "/assets/images/floorplan7.jpeg",
+      "url": "/property/7",
+      "added": {
+        "month": "April",
+        "day": 5,
+        "year": 2022
+      }
+    }
+  ]
+}

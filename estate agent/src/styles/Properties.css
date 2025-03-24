@@ -1,0 +1,441 @@
+/* Container for the properties page */
+.properties-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Title for the properties page */
+.page-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Grid for properties */
+.properties-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Individual property card styling */
+
+/* Property Cards */
+.property-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.property-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.property-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Property image styling */
+.property-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Property details styling */
+.property-details {
+  padding: 1rem;
+}
+
+.property-details h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.property-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Buttons for details and favorites */
+.property-details .details-button,
+.property-details .favorite-button {
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #7757c9;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover,
+.favorite-button:hover {
+  background-color: #3d2087;
+}
+/* Search bar container */
+.search-bar {
+  position: absolute;
+  top: 350px;
+  right: 500px;
+  height:50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius:50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field inside the search bar */
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+/* Search button inside the search bar */
+.search-bar button {
+  background-color: #7757c9;
+  border: none;
+  border-radius: 90%;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #3d2087;
+}
+
+/* Adjust for responsive design */
+@media (max-width: 768px) {
+  .search-bar {
+    top: 350px;
+    left: 50px;
+    margin-bottom: 1rem;
+    width: 80%;
+    box-sizing: border-box;
+  }
+}
+
+/* Advanced Search Modal */
+.search-modal {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.search-modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.search-modal-content label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.search-modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7757c9;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-modal-content button:hover {
+  background-color: #3d2087;
+}
+
+/* Favorites section */
+.favorites-section {
+  flex: 1;
+  max-width: 400px;
+  padding: 1rem;
+  background: #f1f1f1;
+  border-left: 2px solid #ddd;
+  overflow-y: auto;
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorites-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.clear-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #c0392b;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.favorite-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.favorite-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.remove-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+.remove-area {
+  margin-top: 20px; /* Space from the favorites grid */
+  border: 2px dashed #e74c3c; /* Dashed border */
+  padding: 10px; /* Inner spacing */
+  background-color: #fefefe; /* Background color */
+  color: #333; /* Text color */
+  font-size: 0.9rem; /* Font size */
+  text-align: center; /* Center align text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  cursor: pointer; /* Pointer cursor */
+}
+
+
+/* Styling for the modal (view details pop-up) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Ensure the modal content adjusts properly */
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px; /* Ensure the modal doesn't get too wide */
+  max-height: 80vh; /* Prevent the modal from exceeding the screen height */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Animation for the modal opening */
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 10px;
+}
+
+.modal-content .property-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Main image styling */
+.main-image .large-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Thumbnail styling */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnails .thumbnail {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.thumbnails .thumbnail:hover {
+  border-color: #007bff;
+  transform: scale(3.1);
+}
+
+
+/* Close button styling */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f5f5f5;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+  background: #e74c3c;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    max-height: 85%;
+  }
+
+  .property-tabs .nav-tabs .nav-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .property-tabs .tab-content p {
+    font-size: 0.9rem;
+  }
+
+  .main-image .large-image {
+    max-height: 250px;
+  }
+
+  .property-tabs .floor-plan {
+    max-height: 200px;
+  }
+
+  .property-tabs .map {
+    height: 200px;
+  }
+
+  .thumbnails .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}
